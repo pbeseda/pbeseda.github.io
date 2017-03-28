@@ -2,39 +2,29 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<BODY onResize="window.location.href = window.location.href;">
-<BODY onLoad="document.getElementById('textbox').focus();">
+
+<body onResize="window.location.href = window.location.href;">
+<body onLoad="document.getElementById('textbox').focus();">
 
 <body>
 <canvas width="100%" height="100%">
-
-
-<script src="background.js"></script>
-<script src="textbox.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
-
-<script>
-
-$(document).keydown(function(e) {
-  if(e.which == 112) {
-    e.stopPropagation();
-    e.preventDefault();
-    console.log ("f1");
-    $(".links").fadeToggle( "slow", "linear" );
-  }
-});
-</script>
-
-
-
+	<script src="textbox.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		$(document).keydown(function(e) {
+  			if(e.which == 112) {
+    			e.stopPropagation();
+    			e.preventDefault();
+    			console.log ("f1");
+    		$(".links").fadeToggle( "slow", "linear" );
+  			}
+		});
+	</script>
 </canvas>
+
     <div id = "container">
         <div id = "search">
         <h3>what are you waiting for?</h3>
-
-
             <form name="textboxthing" onInput="textUpdate()">
 
             <input type="text" id="textbox" class="cleardefault" maxlength="180" size="50" autofocus autocomplete="off" onKeyDown="if (event.keyCode == 13) { textSubmit(); return false;}" />
