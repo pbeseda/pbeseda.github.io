@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<BODY onResize="window.location.href = window.location.href;">
+<BODY onLoad="document.getElementById('textbox').focus();">
+
+<body>
+<canvas width="100%" height="100%">
+
+
+<script src="background.js"></script>
+<script src="textbox.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+<script>
+
+$(document).keydown(function(e) {
+  if(e.which == 112) {
+    e.stopPropagation();
+    e.preventDefault();
+    console.log ("f1");
+    $(".links").fadeToggle( "slow", "linear" );
+  }
+});
+</script>
+
+
+
+</canvas>
+    <div id = "container">
+        <div id = "search">
+        <h3>what are you waiting for?</h3>
+
+
+            <form name="textboxthing" onInput="textUpdate()">
+
+            <input type="text" id="textbox" class="cleardefault" maxlength="180" size="50" autofocus autocomplete="off" onKeyDown="if (event.keyCode == 13) { textSubmit(); return false;}" />
+
+
+            </form>
+
+        </div>
+
+
+
+
+        <div class = "links">
+            <h3>common</h3>
+            <hr>
+                <div id="entry">
+                    <a class=alignleft>/yt/ [query]</p>
+                    <a class=alignright href="https://www.youtube.com">youtube</a>
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/r/ [sub]</p>
+                    <a class=alignright href="https://reddit.com">reddit</a>
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/grif</p>
+                    <a class=alignright href="https://my.griffith.edu.au">griffith</a>
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/ams</p>
+                    <a class=alignright href="https://ams.ausport.gov.au">ausport ams</a>
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/bc</p>
+                    <a class=alignright href="https://bandcamp.com">bandcamp</a>
+                </div>
+                
+        </div>
+        <div class = "links">
+            <h3>dev</h3>
+            <hr>    
+                <div id="entry">
+                    <a class=alignleft>/git</p>
+                    <a class=alignright href="https://github.com">github</a>   
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/mdn</p>
+                    <a class=alignright href="https://developer.mozilla.org/en-US/">mdn</a>
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/w3</p>
+                    <a class=alignright href="https://www.w3schools.com">w3schools</a>   
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/cpen</p>
+                    <a class=alignright href="https://www.codepen.io">codepen</a> 
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/stack</p>
+                    <a class=alignright href="https://stackoverflow.com">stackoverflow</a> 
+                </div>
+        </div>
+        <div class = "links">
+            <h3>p2p</h3>
+            <hr>
+                <div id="entry">
+                    <a class=alignleft>/what</p>
+                    <a class=alignright href="https://whatbox.ca/manage">whatbox</a>
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/ptp</p>
+                    <a class=alignright href="https://passthepopcorn.me/index.php">passthepopcorn</a>
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/red</p>
+                    <a class=alignright href="https://redacted.ch/">redacted</a>   
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/abtv</p>
+                    <a class=alignright href="https://animebytes.tv/">animebytes</a>
+                </div>
+                <div style="clear: both;"></div>
+                <div id="entry">
+                    <a class=alignleft>/btn</p>
+                    <a class=alignright href="https://broadcasthe.net/">btn</a>
+                </div>
+        </div>
+    </div>
+
+    <div id="helpText">
+    <h4> press f1 for help </h4>
+    </div>
+
+
+</body>
