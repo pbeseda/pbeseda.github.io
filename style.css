@@ -1,128 +1,59 @@
-#container{
-    position:           relative;
-    width:              960px;
-    height:             480px; 
-    margin:             auto; 
-    font-family:        'Raleway', sans-serif;
-    font-size:          20px;
-    top: 120px;
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
 
-    animation-name:     test;
-    animation-duration: 3s;
-
-
+html { 
+  background-color: #708090
 }
 
-input[type="text"], textarea{
-    color:  #fff;
-    padding-right: 10px;
-    padding-left:   10px;
-    font-size:  20px;
-    height: 50px;
-    background-color:rgba(35, 35, 35,0.5);
+.hello{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  position: relative;
+  top: 100px;
+  left: 80px;
+  width: 80%;
 }
 
 
-.searchbox{
-    opacity:            0.7;
+.header1{
+  color: #ccc;
+  font-size: 22px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header2{
+  color: #ccc;
+  font-size: 22px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header3{
+  color: #ccc;
+  font-size: 22px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header4{
+  color: #ccc;
+  font-size: 22px;
+  border-bottom: 1px solid #ccc;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+a:visited {
+  color: #ccc;
+  text-decoration: none;
 }
 
 
-@keyframes test {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-
-
-#helpText {
-    font-family:    'Raleway', sans-serif;
-    position:   fixed;
-    bottom:     0px;
-    width:      100%;
-}
-
-
-h4{
-    font-size:      20px;
-    opacity:        1;
-    color:      #444444;
-    text-align:  center;
-
-}
-
-
-
-
-.alignleft {
-    float: left;
-}
-.alignright {
-    float: right;
-}
-
-
-#entry:hover {
-    opacity:    1.0;
-}
-
-
-.links{
-    display:            none;
-    float:              left;
-    width:              300px;
-    padding-top:        40px;
-    padding-left:       10px;
-    padding-right:      10px;
-
-}
-
-
-canvas{
-  position: absolute;
-  width: 1920; height: 1080;
-  top: 0; right: 0; bottom: 0; left: 0;
-
-    animation-name:     test;
-    animation-duration: 1s;
-
-}
-
-body{
-    background:         #232323;
-    text-align:         center;
-}
-
-h3{
-    opacity:            0.7;
-    text-align:         center;
-    color:              #fe8019
-}
-
-
-hr{
-    opacity:            0.7;
-    color:              #fe8019;
-    line-height:        1.0;
-}
-
-a{
-
-    color:              #fe8019;
-    text-decoration:    none;
-    display:            block;
-    text-align:         center;
-    opacity:            0.7;
-}
-
-a:hover{
-    opacity:            1.0;
-}
-
-
-input{
-    width:              100%;
-    box-sizing:         border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-}
