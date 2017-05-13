@@ -6,7 +6,7 @@ html {
 
 .hello{
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 100;
   letter-spacing: 4px;
   position: relative;
@@ -20,6 +20,7 @@ html {
   color: #ccc;
   font-size: 22px;
   border-bottom: 1px solid #ccc;
+  margin-top: 20px;
 }
 
 .header2{
