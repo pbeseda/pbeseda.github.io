@@ -74,7 +74,7 @@ var favorites = [
   ],
   [ "Financial",
     [
-      ["Personal Capital" , "https://www.mint.com/", "pc"],
+      ["Personal Capital" , "https://home.personalcapital.com/page/login/app#/dashboard", "pc"],
       ["CU of CO" , "https://www.cuofco.org/", "cu"],
       ["Simple" , "https://bank.simple.com/signin", "sim"],
       ["Paypal" , "https://www.paypal.com/signin", "pay"],
