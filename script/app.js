@@ -13,7 +13,7 @@ function init() {
 
   // Background managment with the plugin backstretch
   // Get 1 images from the var.js array of images for the background
-  $("body").backstretch("images/"+images[Math.round(Math.random()*(images.length-1))],{fade: 300});
+  $("body").backstretch("images/"+images[Math.round(Math.random()*(images.length-1))],{fade: 50});
 
   // Scroll managment for each pannel (smarter screen and after insert of multiple cff informations)
   // Use the plugin mCustomScrollbar.jquery.min.js
@@ -452,59 +452,59 @@ function initTimeLines() {
     .from($(".s1"), .4, {
       rotation: "-=180"
     }, "#1")
-    .from($(".s2"), .5, {
+    .from($(".s2"), .4, {
       rotation: "-=180"
     }, "#1")
-    .from($(".s3"), .6, {
+    .from($(".s3"), .4, {
       rotation: "-=180"
     }, "#1")
-    .from($(".s4"), .7, {
+    .from($(".s4"), .4, {
       rotation: "-=180"
     }, "#1")
     .pause();
 
   tlDisplay = new TimelineMax()
-    .to($(".squares"), .2, {
+    .to($(".squares"), .02, {
       autoAlpha: 0
     })
     .to($(".squares"), .05, {
       height: 0
     }, "#1")
-    .from($(".image"), .2, {
+    .from($(".image"), .02, {
       height: 0
     }, "#1")
-    .from($(".image"), .2, {
+    .from($(".image"), .02, {
       autoAlpha: 0,
       marginLeft: "-20"
     })
     .to($(".image"), 0, {
       height: "auto"
     })
-    .from($("#greetings-board"), .2, {
+    .from($("#greetings-board"), .02, {
       autoAlpha: 0,
       marginLeft: "-20"
     })
-    .from($("#weather-board"), .2, {
+    .from($("#weather-board"), .02, {
       autoAlpha: 0,
       marginLeft: "-20"
     })
-    .from($("#search-board"), .2, {
+    .from($("#search-board"), .02, {
       autoAlpha: 0,
       marginLeft: "-20"
     })
-    .from($("#favorites-board"), .2, {
+    .from($("#favorites-board"), .02, {
       autoAlpha: 0,
       marginLeft: "-20"
     })
-    .from($("#terminal-board"), .2, {
+    .from($("#terminal-board"), .02, {
       autoAlpha: 0,
       marginLeft: "-20"
     }, "#2")
-    .from($("#tabs"), .2, {
+    .from($("#tabs"), .02, {
       autoAlpha: 0,
       marginLeft: "-20"
     }, "#2")
-    .from($("#rss-board"), .2, {
+    .from($("#rss-board"), .02, {
       autoAlpha: 0,
       marginLeft: "-20"
     })
