@@ -65,9 +65,9 @@ var favorites = [
       ["printful", "https://www.printful.com/auth/login", "ph"]
     ]
   ],
-  [ "4chan",
+  [ "comms",
     [
-      ["slack", "https://www.reddit.com/", "fp"],
+      ["slack", "https://www.slack.com/", "s"],
       ["pinterest", "https://www.pinterest.com/", "p"],
       ["reddit", "https://www.reddit.com/", "r"],
     ]
@@ -86,7 +86,19 @@ var favorites = [
   [ "Others",
     [
       ["twig", "https://twigcustombuilders.com/", "tw"],
+      ["twig server", "https://twigcustombuilders.com/", "tw"],
       ["airforums", "https://www.airforums.com/", "air"]
+    ]
+  ],
+  [ "Vendors",
+    [
+      ["Tools Today", "https://www.toolstoday.com/", ""],
+      ["Amana", "https://www.amanatool.com/", ""],
+      ["Wurth", "https://www.wurthlac.com/storefront/index.ep", ""],
+      ["Hafele", "https://www.hafele.com/us/en/", "tw"],
+      ["National", "http://nationalwood.com/", ""],
+      ["Laguna Tools", "https://lagunatools.com/", ""],
+      ["Amazon", "https://www.amazon.com/", ""]
     ]
   ]
 ];
