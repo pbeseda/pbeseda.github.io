@@ -40,12 +40,13 @@ var favorites = [
       ["formlabs dashboard" , "https://formlabs.com/dashboard/", "fl"],
       ["formlabs forum" , "https://forum.formlabs.com/", "flf"],
       ["thingiverse" , "http://www.thingiverse.com/" , "th"],
-      ["fusion forum" , "https://forums.autodesk.com/t5/fusion-360/ct-p/1234", "fus"]
+      ["fusion forum" , "https://forums.autodesk.com/t5/fusion-360/ct-p/1234", "fus"],
+      ["fusion hub" , "https://twigcustombuilders.autodesk360.com/g/all_projects/active", "f"]
     ]
   ],
   [ "resources",
     [
-      ["thepiratebay", "http://thepiratebay.se", "tpb"],
+      ["thepiratebay", "https://thepiratebay.org/", "tpb"],
       ["creative market", "http://thepiratebay.se", "cr"],
       ["unit conversion", "http://thepiratebay.se", "con"],
       ["codrops", "https://tympanus.net/codrops/", "cod"],
@@ -57,7 +58,7 @@ var favorites = [
   [ "FNDRY",
     [
       ["FNDRYFNDRY.com", "https://fndryfndry.com/", "f"],
-      ["FNDRY Hosting Login", "https://fndryfndry.com/", "f"],
+      ["FNDRY Hosting Login", "https://fndryfndry.com/", "ff"],
       ["Shopify login", "https://topoproject.myshopify.com/admin/auth/login", "mh"],
       ["Xero", "https://login.xero.com/", "x"],
       ["Spark", "https://sparkbusiness3.capitalone.com/app.html#/accountSummary/", "sp"],
@@ -80,7 +81,8 @@ var favorites = [
       ["Paypal" , "https://www.paypal.com/signin", "pay"],
       ["Nelnet" , "https://www.nelnet.com/welcome", "nel"],
       ["Acorns" , "https://app.acorns.com/dashboard/account", "ac"],
-      ["Betterment" , "https://wwws.betterment.com/app/summary", "be"]
+      ["Betterment" , "https://wwws.betterment.com/app/summary", "be"],
+      ["Red Rocks CU" , "https://wwws.betterment.com/app/summary", "rr"]
     ]
   ],
   [ "Others",
@@ -95,7 +97,7 @@ var favorites = [
       ["Tools Today", "https://www.toolstoday.com/", ""],
       ["Amana", "https://www.amanatool.com/", ""],
       ["Wurth", "https://www.wurthlac.com/storefront/index.ep", ""],
-      ["Hafele", "https://www.hafele.com/us/en/", "tw"],
+      ["Hafele", "https://www.hafele.com/us/en/", ""],
       ["National", "http://nationalwood.com/", ""],
       ["Laguna Tools", "https://lagunatools.com/", ""],
       ["Amazon", "https://www.amazon.com/", ""]
