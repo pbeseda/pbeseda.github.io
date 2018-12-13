@@ -46,7 +46,7 @@ var sites = {
 				"login"				: "https://account.squarespace.com/#/",
 				"xero"				: "https://login.xero.com/",
 				"paypal"			: "https://www.paypal.com/signin",
-				"azlo"			: "https://www.paypal.com/signin"
+				"azlo"				: "https://www.paypal.com/signin"
 			},
 			"social": { 
 				"youtube"			: "https://www.youtube.com/",
@@ -97,6 +97,7 @@ function matchLinks(regex = prevregexp) {
 			ln = Object.keys(sites[sn])[l];
 			if (match.test(ln)) {
 				link = document.createElement("a");
+				link.target = '_blank';
 				link.href = sites[sn][ln];
 				link.innerHTML = ln;
 				if (!pivotbuffer++ && regex != "") {
