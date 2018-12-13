@@ -1,134 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
 
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>FNDRY</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+	<title>dome</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script src="js/vendor/jquery-3.3.1.min.js"></script>
-    </head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="dome.js" defer></script>
 
-    <body style="background-color: #000000">
+	<style type="text/css">
+		body > div#main > span > div#static_links {
+			height: 30px;
+		}
+		body > div#main > span > form > input {
+			border: none;
+			height: 50px;
+		}
+		div#links > div.section {
+			display: inline-block;
+			vertical-align: top;
+			height: 200px;
+			width: 300px;
+			margin: 2px;
+		}
+		div#links > div.section > div {
+			padding: 15px;
+		}
+		div#wiper {
+			display: block;
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			background-color: #121B18;
+			opacity: 1;
+			z-index: 100;
+			transition: .5s opacity .5s, .5s z-index .5s;
+		}
+		html, body {
+			margin: 0;
+			background-color: #121B18;
+		}
+	</style>
 
-        <script>
-            var currentTime = new Date().getHours();
-            if (8 <= currentTime && currentTime < 19) {
-                if (document.body) {
-                    document.body.background = "css/background_day.jpg";
-                    document.body.className = " day";
-                }
+</head>
+<body onresize="matchLinks()" onunload="">
 
-            } else {
-                if (document.body) {
-                    document.body.background = "css/background_night.jpg";
-                    document.body.className = " night";
-                }
-            }
-        </script>
+	<div id="wiper"></div>
 
-        <div class="timeArea">
-            <p class="time">
-                <span id="hours"></span><span id="colon">:</span><span id="minutes"></span>
-                <span class="date"></span>
-            </p>
-        </div>
+	<div id="main" style="max-width: 912px;">
+		<span style="display: block">
+			<div id="static_links">
+				<span id="clock">
+					<!-- dome.js: displayDate() fills this element -->
+				</span>
+			</div>
+			<form method="GET" id="action">
+				<input type="text" oninput="matchLinks(this.value)" autofocus autocomplete="off">
+			</form>
+			<div id="links">
+				<!-- dome.js: matchLinks() fills this element -->
+			</div>
+		</span>
+	</div>
 
-        <div class='total-container'>
-            <div class='container'>
-                <div class='favorites'>
-                    <div class='list fav-dev'>
-                        <p>GOOGLE</p>
-                        <ul>
-                            <li><a href='https://mail.google.com/mail/u/0/#inbox'>gmail</a></li>
-                            <li><a href='https://drive.google.com/drive/my-drive'>drive</a></li>
-                            <li><a href='https://calendar.google.com/calendar/r'>calendar</a></li>
-                            <li><a href='https://photos.google.com/'>photos</a></li>
-                            <li><a href='https://www.google.com/maps?hl=en&tab=ql'>maps</a></li>
-                        </ul>
-                    </div>
-
-                    <div class='list fav-ent'>
-                        <p>WORK</p>
-                        <ul>
-                            <li><a href='https://trello.com/'>trello</a></li>
-                            <li><a href='https://outlook.office365.com/owa/'>outlook</a></li>
-                            <li><a href='https://www.slack.com/'>slack</a></li>
-                            <li><a href='https://twigcustombuilders.com/'>twig</a></li>
-                            <li><a href='https://practicemanager.xero.com/Access/Logon/CombinedLogin?'>workflowmax</a></li>
-                            <li><a href='https://lastpass.com/?&ac=1&lpnorefresh=1&fromwebsite=1&newvault=1&nk=1'>last pass</a></li>
-                        </ul>
-                    </div>
-
-                    <div class='list fav-shop'>
-                        <p><a href='http://fndryfndry.com'>FNDRY</a></p>
-                        <ul>
-                            <li><a href='https://account.squarespace.com/#/'>login</a></li>
-                            <li><a href='https://login.xero.com/'>Xero</a></li>
-                            <li><a href='https://sparkbusiness3.capitalone.com/app.html#/accountSummary/'>Spark</a></li>
-                            <li><a href='https://www.paypal.com/signin'>Paypal</a></li>
-                            <li><a href='https://dashboard.stripe.com/login?redirect=%2Fdashboard'>stripe</a></li>
-                            <li><a href='https://www.printful.com/auth/login'>printful</a></li>
-                            <li><a href='https://www.printful.com/auth/login'>digital ocean</a></li>
-                        </ul>
-                    </div>
-
-                    <div class='list fav-learn'>
-                        <p>SOCIAL</p>
-                        <ul>
-                            <li><a href='https://www.instagram.com/'>instagram</a></li>
-                            <li><a href='https://www.youtube.com/'>youtube</a></li>
-                            <li><a href='https://www.facebook.com/'>facebook</a></li>
-                            <li><a href='https://twitter.com/'>twitter</a></li>
-                            <li><a href='https://www.reddit.com/'>reddit</a></li>
-                            <li><a href='https://www.pinterest.com/'>pinterest</a></li>
-                            <li><a href='https://www.pinterest.com/'>spotify</a></li>
-                        </ul>
-                    </div>
-
-                    <div class='list fav-learn'>
-                        <p>FINANCIAL</p>
-                        <ul>
-                            <li><a href='https://app.youneedabudget.com/users/login'>ynab</a></li>
-                            <li><a href='https://www.cuofco.org/'>cu of co</a></li>
-                            <li><a href='https://wwws.betterment.com/app/summary'>red rocks cu</a></li>
-                            <li><a href='https://bank.simple.com/signin'>simple</a></li>
-                            <li><a href='https://www.nelnet.com/welcome'>nelnet</a></li>
-                            <li><a href='https://app.acorns.com/dashboard/account'>acorns</a></li>
-                            <li><a href='https://wwws.betterment.com/app/summary'>betterment</a></li>
-                        </ul>
-                    </div>
-                    <div class='list fav-learn'>
-                        <p>VENDORS</p>
-                        <ul>
-                            <li><a href='https://www.toolstoday.com/'>tools today</a></li>
-                            <li><a href='https://www.amanatool.com/'>amana</a></li>
-                            <li><a href='https://www.wurthlac.com/storefront/index.ep'>wurth</a></li>
-                            <li><a href='https://www.hafele.com/us/en/'>hafele</a></li>
-                            <li><a href='https://nationalwood.com/'>national wood</a></li>
-                            <li><a href='https://lagunatools.com/'>laguna tools</a></li>
-                            <li><a href='https://www.amazon.com/'>amazon</a></li>
-                        </ul>
-                    </div>
-                    <div class='list fav-learn'>
-                        <p>MAKE</p>
-                        <ul>
-                            <li><a href='https://formlabs.com/dashboard/'>formlabs dashboard</a></li>
-                            <li><a href='https://forum.formlabs.com/'>formlabs forum</a></li>
-                            <li><a href='https://forums.autodesk.com/t5/fusion-360/ct-p/1234'>fusion forum</a></li>
-                            <li><a href='https://twigcustombuilders.autodesk360.com/g/all_projects/active'>fusion hub</a></li>
-                            <li><a href='http://www.thingiverse.com/'>thingiverse</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <script src="js/main.js" async></script> 
-
-    </body>
-
+</body>
 </html>
