@@ -46,7 +46,8 @@ var sites = {
 				"login"				: "https://account.squarespace.com/#/",
 				"xero"				: "https://login.xero.com/",
 				"paypal"			: "https://www.paypal.com/signin",
-				"azlo"				: "https://www.paypal.com/signin"
+				"azlo"				: "https://www.paypal.com/signin",
+				"kickstarter"		: "https://www.kickstarter.com/"
 			},
 			"social": { 
 				"youtube"			: "https://www.youtube.com/",
@@ -57,7 +58,8 @@ var sites = {
 			"financial": {
 				"ynab"				: "https://app.youneedabudget.com/users/login",
 				"cu of co"			: "https://www.cuofco.org/",
-				"nelnet"			: "https://www.nelnet.com/welcome"
+				"nelnet"			: "https://www.nelnet.com/welcome",
+				"amazon"			: "https://www.amazon.com/"
 			},
 			"forums": {
 				"formlabs forums"	: "https://forum.formlabs.com/",
