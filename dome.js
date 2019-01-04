@@ -36,17 +36,20 @@ var sites = {
 			"comm": {
 				"email"				: "https://mail.google.com/mail/u/0/#inbox",
 				"calendar"			: "https://calendar.google.com/calendar/r",
+				"telegram"			: "https://web.telegram.org/#/im",
 				"photos"			: "https://photos.google.com/"
 			},
 			"tools": {
 				"drive"				: "https://drive.google.com/drive/my-drive",
-				"trello"			: "https://trello.com/"
+				"trello"			: "https://trello.com/",
+				"formlabs"			: "https://formlabs.com/dashboard/",
+				"ncviewer"			: "https://ncviewer.com/"
 			},
 			"fndry": {
 				"login"				: "https://account.squarespace.com/#/",
 				"xero"				: "https://login.xero.com/",
 				"paypal"			: "https://www.paypal.com/signin",
-				"azlo"				: "https://www.paypal.com/signin",
+				"azlo"				: "https://app.azlo.com/en/a/dashboard",
 				"kickstarter"		: "https://www.kickstarter.com/"
 			},
 			"social": { 
