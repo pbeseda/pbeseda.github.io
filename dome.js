@@ -33,7 +33,7 @@
 
 // div.innerHTML : {a.innerHTML : a.href}
 var sites = {
-			"comm": {
+			"comms": {
 				"email"				: "https://mail.google.com/mail/u/0/#inbox",
 				"calendar"			: "https://calendar.google.com/calendar/r",
 				"telegram"			: "https://web.telegram.org/#/im",
@@ -43,7 +43,8 @@ var sites = {
 				"drive"				: "https://drive.google.com/drive/my-drive",
 				"trello"			: "https://trello.com/",
 				"formlabs"			: "https://formlabs.com/dashboard/",
-				"ncviewer"			: "https://ncviewer.com/"
+				"ncviewer"			: "https://ncviewer.com/",
+				"thingiverse"		: "https://www.thingiverse.com/",
 			},
 			"fndry": {
 				"login"				: "https://account.squarespace.com/#/",
@@ -64,10 +65,12 @@ var sites = {
 				"nelnet"			: "https://www.nelnet.com/welcome",
 				"amazon"			: "https://www.amazon.com/"
 			},
-			"forums": {
+			"community": {
 				"formlabs forums"	: "https://forum.formlabs.com/",
 				"fusion forums"		: "https://forums.autodesk.com/t5/fusion-360/ct-p/1234",
 				"reddit"			: "https://www.reddit.com/",
+				"rrcc"				: "https://www.rrcc.edu/",
+				"rr email"			: "https://owa.cccs.edu/owa/",
 			}
 		};
 
