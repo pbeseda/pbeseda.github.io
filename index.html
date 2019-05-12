@@ -1,68 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-
-	<title>dome</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="dome.js" defer></script>
-
-	<style type="text/css">
-		body > div#main > span > div#static_links {
-			height: 30px;
-		}
-		body > div#main > span > form > input {
-			border: none;
-			height: 50px;
-		}
-		div#links > div.section {
-			display: inline-block;
-			vertical-align: top;
-			height: 200px;
-			width: 300px;
-			margin: 2px;
-		}
-		div#links > div.section > div {
-			padding: 15px;
-		}
-		div#wiper {
-			display: block;
-			position: fixed;
-			width: 100vw;
-			height: 100vh;
-			background-color: #121B18;
-			opacity: 1;
-			z-index: 100;
-			transition: .5s opacity .5s, .5s z-index .5s;
-		}
-		html, body {
-			margin: 0;
-			background-color: #121B18;
-		}
-	</style>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex"/>
+  <link rel="stylesheet" href="style/style.css" class="style">
+  <title>Home</title>
 </head>
-<body onresize="matchLinks()" onunload="">
 
-	<div id="wiper"></div>
+<body>
+  <div class="center"><time class="clock" id="clock"></time></div>
 
-	<div id="main" style="max-width: 912px;">
-		<span style="display: block">
-			<div id="static_links">
-				<span id="clock">
-					<!-- dome.js: displayDate() fills this element -->
-				</span>
-			</div>
-			<form method="GET" id="action">
-				<input type="text" oninput="matchLinks(this.value)" autofocus autocomplete="off">
-			</form>
-			<div id="links">
-				<!-- dome.js: matchLinks() fills this element -->
-			</div>
-		</span>
-	</div>
-
+  <form autocomplete="off" class="center overlay search-form" id="search-form" spellcheck="false">
+    <div>
+      <input class="search-input" id="search-input" title="search" type="text" />
+      <ul class="search-suggestions" id="search-suggestions"></ul>
+    </div>
+  </form>
+  
+  <aside class="center help overlay" id="help"></aside>
+  <script src="script/script.js"></script>
 </body>
 </html>
