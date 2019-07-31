@@ -12,7 +12,7 @@ const CONFIG = {
       key: '*',
       url: 'https://google.com',
       search: '/search?q={}',
-      color: '#DE5833',
+      color: '#545353',
     },
     {
       category: 'google',
@@ -20,7 +20,7 @@ const CONFIG = {
       key: 'g',
       url: 'https://gmail.com',
       search: '/#search/text={}',
-      color: 'linear-gradient(135deg, #dd5145, #dd5145)',
+      color: '#545353)',
       icon: 'mail',
       quickLaunch: true,
     },
@@ -30,7 +30,7 @@ const CONFIG = {
       key: 'd',
       url: 'https://drive.google.com',
       search: '/drive/search?q={}',
-      color: 'linear-gradient(135deg, #FFD04B, #1EA362, #4688F3)',
+      color: '#545353',
       icon: 'drive',
       quickLaunch: false,
     },
@@ -160,7 +160,7 @@ const CONFIG = {
       url: 'https://fndryfndry.com/',
       search: '',
       color: 'linear-gradient(135deg, #6441a5, #4b367c)',
-      icon: 'fndry',
+      icon: 'bookmark',
       quickLaunch: false,
     },
     {
@@ -170,7 +170,7 @@ const CONFIG = {
       url: 'https://account.squarespace.com/',
       search: '',
       color: 'linear-gradient(135deg, #6441a5, #4b367c)',
-      icon: 'squarespace',
+      icon: 'bookmark',
       quickLaunch: false,
     },
     {
@@ -180,7 +180,7 @@ const CONFIG = {
       url: 'https://go.xero.com/Dashboard/',
       search: '',
       color: 'linear-gradient(135deg, #6441a5, #4b367c)',
-      icon: 'xero',
+      icon: 'ledger',
       quickLaunch: false,
     },
     {
@@ -190,7 +190,7 @@ const CONFIG = {
       url: 'https://app.azlo.com/en/a/dashboard',
       search: '',
       color: 'linear-gradient(135deg, #6441a5, #4b367c)',
-      icon: 'azlo',
+      icon: 'bank',
       quickLaunch: false,
     },
     {
@@ -200,7 +200,7 @@ const CONFIG = {
       url: 'https://www.thingiverse.com/',
       search: '',
       color: 'linear-gradient(135deg, #6441a5, #4b367c)',
-      icon: 'thingiverse',
+      icon: '3d',
       quickLaunch: false,
     },
     {
@@ -210,7 +210,7 @@ const CONFIG = {
       url: 'https://formlabs.com/dashboard/',
       search: '',
       color: 'linear-gradient(135deg, #6441a5, #4b367c)',
-      icon: 'formlabs',
+      icon: '3d',
       quickLaunch: false,
     },
     {
@@ -220,7 +220,7 @@ const CONFIG = {
       url: 'https://www.cocovanlife.com/',
       search: '',
       color: 'linear-gradient(135deg, #6441a5, #4b367c)',
-      icon: 'cocovan',
+      icon: 'bookmark',
       quickLaunch: false,
     },
     {
@@ -230,7 +230,7 @@ const CONFIG = {
       url: 'https://app.youneedabudget.com/',
       search: '',
       color: 'linear-gradient(135deg, #6441a5, #4b367c)',
-      icon: 'ynab',
+      icon: 'ledger',
       quickLaunch: false,
     },
     {
@@ -250,7 +250,7 @@ const CONFIG = {
       url: 'https://www.cuofco.org/',
       search: '',
       color: 'linear-gradient(135deg, #6441a5, #4b367c)',
-      icon: 'cuofco',
+      icon: 'bank',
       quickLaunch: false,
     },
   ],
