@@ -95,6 +95,16 @@ const CONFIG = {
       quickLaunch: true,
     },
     {
+      category: 'tools',
+      name: 'Upwork',
+      key: 'u',
+      url: 'https://www.upwork.com/ab/find-work/domestic',
+      search: '',
+      color: '#828282',
+      icon: 'bookmark',
+      quickLaunch: false,
+    },
+    {
       category: 'media',
       name: 'youtube',
       key: 'y',
@@ -154,6 +164,36 @@ const CONFIG = {
       quickLaunch: false,
     },
     {
+      category: 'community',
+      name: 'sprinter source',
+      key: 'i',
+      url: 'https://sprinter-source.com/forum/',
+      search: '',
+      color: '#828282',
+      icon: 'bookmark',
+      quickLaunch: false,
+    },
+    {
+      category: 'community',
+      name: 'DIY Solar Forum',
+      key: 'i',
+      url: 'http://www.diysolarforum.com/index.php',
+      search: '',
+      color: '#828282',
+      icon: 'bookmark',
+      quickLaunch: false,
+    },
+    {
+      category: 'community',
+      name: 'Vanlife Project Forum',
+      key: 'i',
+      url: 'https://www.instagram.com/',
+      search: '',
+      color: '#828282',
+      icon: 'bookmark',
+      quickLaunch: false,
+    },
+    {
       category: 'FNDRY',
       name: 'FNDRYFNDRY',
       key: '',
@@ -201,6 +241,16 @@ const CONFIG = {
       search: '',
       color: '#828282',
       icon: '3d',
+      quickLaunch: false,
+    },
+    {
+      category: 'FNDRY',
+      name: 'MyMiniFactory',
+      key: '',
+      url: 'https://www.myminifactory.com/',
+      search: '',
+      color: '#828282',
+      icon: 'bookmark',
       quickLaunch: false,
     },
     {
@@ -319,7 +369,7 @@ const CONFIG = {
   /**
    * The delimiter between the hours and minutes on the clock.
    */
-  clockDelimiter: ':',
+  clockDelimiter: ' ',
 
   /**
    * Show a twenty-four-hour clock instead of a twelve-hour clock with AM/PM.
