@@ -154,7 +154,7 @@ const CONFIG = {
       quickLaunch: false,
     },
     {
-      category: 'community',
+      category: 'media',
       name: 'instagram',
       key: 'i',
       url: 'https://www.instagram.com/',
@@ -187,7 +187,7 @@ const CONFIG = {
       category: 'community',
       name: 'Vanlife Project Forum',
       key: 'i',
-      url: 'https://www.instagram.com/',
+      url: 'https://forum.projectvanlife.com/',
       search: '',
       color: '#828282',
       icon: 'bookmark',
@@ -264,7 +264,17 @@ const CONFIG = {
       quickLaunch: false,
     },
     {
-      category: 'COCOVAN',
+      category: 'FEATHERBUILT',
+      name: 'FEATHERBUILT',
+      key: 'a',
+      url: 'https://www.featherbuilt.com/',
+      search: '',
+      color: '#828282',
+      icon: 'bookmark',
+      quickLaunch: false,
+    },
+        {
+      category: 'FEATHERBUILT',
       name: 'COCOVAN',
       key: 'a',
       url: 'https://www.cocovanlife.com/',
@@ -298,6 +308,16 @@ const CONFIG = {
       name: 'CUOfCO',
       key: '',
       url: 'https://www.cuofco.org/',
+      search: '',
+      color: '#828282',
+      icon: 'bank',
+      quickLaunch: true,
+    },
+        {
+      category: 'finance',
+      name: 'Capital One',
+      key: '',
+      url: 'https://www.capitalone.com/',
       search: '',
       color: '#828282',
       icon: 'bank',
@@ -369,7 +389,7 @@ const CONFIG = {
   /**
    * The delimiter between the hours and minutes on the clock.
    */
-  clockDelimiter: ' ',
+  clockDelimiter: ':',
 
   /**
    * Show a twenty-four-hour clock instead of a twelve-hour clock with AM/PM.
@@ -504,8 +524,8 @@ class Help {
   }
 
   launch() {
-    this.hide();
-    this.toggle(true);
+    this.show();
+    this.toggle(false);
     $.bodyClassAdd('help');
     for (let i = 0; i < CONFIG.commands.length; i++) {
       if (CONFIG.commands[i].quickLaunch === true) {
