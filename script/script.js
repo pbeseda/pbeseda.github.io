@@ -254,6 +254,16 @@ const CONFIG = {
     },
     {
       category: 'FNDRY',
+      name: 'vanspace3D',
+      key: 'a',
+      url: 'https://vanspace3d.com/home-v3d',
+      search: '',
+      color: '#828282',
+      icon: 'bookmark',
+      quickLaunch: false,
+    },
+    {
+      category: 'FNDRY',
       name: 'squarespace',
       key: 's',
       url: 'https://account.squarespace.com/',
